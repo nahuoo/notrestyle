@@ -1,7 +1,7 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce -> https://www.nextjs.org/commerce",
+  "title": "Notre Style",
+  "titleTemplate": " ",
+  "description": "eCommerce de Trajes de baño",
   "openGraph": {
     "type": "website",
     "locale": "en_IE",
