@@ -22,7 +22,7 @@
     &:nth-child(6n + 1) .productTitle > span,
     &:nth-child(6n + 1) .productPrice,
     &:nth-child(6n + 1) .wishlistButton {
-      @apply bg-violet text-white;
+      @apply bg-transparent text-black;
     }
 
     &:nth-child(6n + 5) .productTitle > span,
