@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react'
 import Link from 'next/link'
 import s from './Navbar.module.css'
-import { Logo, Container } from '@components/ui'
+import { Logo, Container } from '@components/ui' 
 import { Searchbar, UserNav } from '@components/common'
 import cn from 'classnames'
 import throttle from 'lodash.throttle'
@@ -46,10 +46,10 @@ const Navbar: FC = () => {
             </nav>
           </div>
 
-          <div className="flex-1 justify-center hidden lg:flex">
+         {/* <div className="flex-1 justify-center hidden lg:flex">
             <Searchbar />
           </div>
-
+  */}
           <div className="flex flex-1 justify-end space-x-8">
             <UserNav />
           </div>
