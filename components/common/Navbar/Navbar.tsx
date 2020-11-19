@@ -35,13 +35,13 @@ const Navbar: FC = () => {
             </Link>
             <nav className="space-x-4 ml-6 hidden lg:block">
               <Link href="/">
-                <a className={s.link}>All</a>
+                <a className={s.link}>Todo</a>
               </Link>
               <Link href="/search?q=clothes">
-                <a className={s.link}>Clothes</a>
+                <a className={s.link}>Trajes de baño</a>
               </Link>
               <Link href="/search?q=accessories">
-                <a className={s.link}>Accessories</a>
+                <a className={s.link}>Ropa</a>
               </Link>
             </nav>
           </div>

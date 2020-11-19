@@ -82,32 +82,13 @@ const Footer: FC<Props> = ({ className, pages }) => {
               ))}
             </ul>
           </div>
-          <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-primary">
-            <div className="flex space-x-6 items-center h-10">
-              <a
-                aria-label="Github Repository"
-                href="https://github.com/vercel/commerce"
-                className={s.link}
-              >
-                <Github />
-              </a>
-              <I18nWidget />
-            </div>
-          </div>
         </div>
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2020 Notre Style . Todos los derechos reservados.</span>
           </div>
           <div className="flex items-center">
-            <span className="text-primary">Crafted by</span>
-            <a href="https://vercel.com" aria-label="Vercel.com Link">
-              <img
-                src="/vercel.svg"
-                alt="Vercel.com Logo"
-                className="inline-block h-6 ml-4 text-primary"
-              />
-            </a>
+            <span className="text-primary">Creado por Nahuel Sigismondi</span>
           </div>
         </div>
       </Container>
