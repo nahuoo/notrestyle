@@ -23,7 +23,7 @@ const Hero: FC<Props> = ({ titulo, descripcion }) => {
             </p>
             <Link href="/blog">
               <a className="text-white pt-3 font-bold hover:underline flex flex-row cursor-pointer w-max-content">
-                Leer --
+                Leer
                 <RightArrow width="20" heigh="20" className="ml-1" />
               </a>
             </Link>

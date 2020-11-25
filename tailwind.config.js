@@ -10,6 +10,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'head-fondo': "url('../public/123.jpg')",
+       }),
       maxWidth: {
         '8xl': '1920px',
       },

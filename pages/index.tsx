@@ -84,8 +84,14 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
-      {// aca se puede meter algun div
+      {// aca esta el background-img
       }
+      <div className="bg-head-fondo bg-cover min-h-screen mt-0"></div>
+       <Hero 
+        titulo="Nueva colección 2020"
+        descripcion="
+        Aca una virgueada."
+      />
       <Grid layout="normal">
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
@@ -113,15 +119,10 @@ export default function Home({
           />
         ))}
       </Marquee>
-      <Hero
-        titulo=" ESTE ES UN TITULO"
-        descripcion="
-        Aca una descirpciaosnd adq de
-        asdlkaedkmd eamd kaemdakeaekdmakldem
-        aedamedkaedmlaekdmaldmaeldmaelkmdae
-        daekdmlakemdlaemdlkademaekdmlkaemdlkaedmalkdmalkdma
-        descripcion re larga."
-      />
+      {
+        //si esto tiene descripciòn larga se bugea todo
+      }
+     
       <Grid layout="B">
         {featured.slice(3, 6).map(({ node }, i) => (
           <ProductCard

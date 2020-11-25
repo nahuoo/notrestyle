@@ -1,6 +1,7 @@
 :root {
+  --transparent: rgba(255, 255, 255, 0.938);
   --primary: #ffffff;
-  --primary-2: #f1f3f5;
+  --primary-2: #f3ecf3de;
   --secondary: #000000;
   --secondary-2: #111;
 

@@ -26,11 +26,11 @@ const Navbar: FC = () => {
   return (
     <div className={cn(s.root, { 'shadow-magical': hasScrolled })}>
       <Container>
-        <div className="flex justify-between align-center flex-row py-4 md:py-6 relative">
+        <div className="flex justify-between align-center flex-row py-4 md:py-2 relative ">
           <div className="flex flex-1 items-center">
             <Link href="/">
-              <a className={s.logo} aria-label="Logo">
-                <Logo />
+              <a aria-label="Logo" >
+                <img  width='175' src='icon.png'  />
               </a>
             </Link>
             <nav className="space-x-4 ml-6 hidden lg:block">
@@ -50,13 +50,9 @@ const Navbar: FC = () => {
             <Searchbar />
           </div>
   */}
-          <div className="flex flex-1 justify-end space-x-8">
+          <div className="flex flex-1 justify-end items-center space-x-8">
             <UserNav />
           </div>
-        </div>
-
-        <div className="flex pb-4 lg:px-6 lg:hidden">
-          <Searchbar id="mobile-search" />
         </div>
       </Container>
     </div>
