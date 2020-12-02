@@ -1,47 +1,32 @@
 .root {
   @apply relative max-h-full w-full box-border overflow-hidden
   bg-no-repeat bg-center bg-cover transition-transform
-  ease-linear cursor-pointer;
+  ease-in cursor-pointer;
   height: 100% !important;
+  
 
   &:hover {
+    
+    & .productTitle, &.productPrice {
+        @apply inline;
+      };
+      
+    
     & .squareBg:before {
-      transform: scale(0.98);
-    }
+      transform: scale(0.98);     
+    };
 
     & .product-image {
       transform: scale(1.05);
-    }
+    };
 
-    & .productTitle > span,
-    & .productPrice,
-    & .wishlistButton {
-      @apply bg-secondary text-secondary;
-    }
+    & .productTitle > span
+    {
+      @apply bg-secondary text-secondary ;
+      
+    };
 
-    &:nth-child(6n + 1) .productTitle > span,
-    &:nth-child(6n + 1) .productPrice,
-    &:nth-child(6n + 1) .wishlistButton {
-      @apply bg-transparent text-black;
-    }
-
-    &:nth-child(6n + 5) .productTitle > span,
-    &:nth-child(6n + 5) .productPrice,
-    &:nth-child(6n + 5) .wishlistButton {
-      @apply bg-blue text-white;
-    }
-
-    &:nth-child(6n + 3) .productTitle > span,
-    &:nth-child(6n + 3) .productPrice,
-    &:nth-child(6n + 3) .wishlistButton {
-      @apply bg-pink text-white;
-    }
-
-    &:nth-child(6n + 6) .productTitle > span,
-    &:nth-child(6n + 6) .productPrice,
-    &:nth-child(6n + 6) .wishlistButton {
-      @apply bg-cyan text-white;
-    }
+    
   }
 
   & .product-image {
@@ -70,6 +55,7 @@
 .productPrice,
 .wishlistButton {
   @apply transition-colors ease-in-out duration-500;
+  
 }
 
 .squareBg {
@@ -92,6 +78,7 @@
   & .productTitle {
     @apply pt-2;
     font-size: 1rem;
+    
 
     & span {
       @apply leading-extra-loose;
@@ -104,31 +91,40 @@
 }
 
 .productTitle {
-  @apply pt-0 max-w-full w-full leading-extra-loose;
-  font-size: 2rem;
+  @apply pt-0 max-w-full w-full leading-extra-loose bg-pink hidden .p-1;
+  font-size: 1.5 rem;
   letter-spacing: 0.4px;
-
+  
+ 
+ 
   & span {
     @apply py-4 px-6 bg-transparent text-primary font-bold;
     font-size: inherit;
     letter-spacing: inherit;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+    
   }
 }
 
 .productPrice {
-  @apply py-4 px-6 bg-primary text-primary font-semibold inline-block text-sm leading-6;
+  @apply py-4 px-6 bg-primary text-primary font-semibold inline-block text-sm leading-6 hidden;
   letter-spacing: 0.4px;
+  
 }
 
 .wishlistButton {
   @apply w-10 h-10 flex ml-auto items-center justify-center bg-primary text-primary font-semibold  text-xs leading-6 cursor-pointer;
 }
 
+/*  --La imagen de cada producto--    */
 .imageContainer {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center transition duration-300;
   overflow: hidden;
+
+  &:hover {
+    opacity: 50%;
+  }
 
   & > div {
     min-width: 100%;
@@ -138,4 +134,9 @@
 .image {
   object-fit: cover;
   transform: scale(1.2);
+}
+
+.wrapper {
+  @apply flex flex-row justify-between box-border w-full z-20 absolute .m-10 .p-11;
+
 }

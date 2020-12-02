@@ -25,7 +25,7 @@ export default function Profile() {
         <div className="grid lg:grid-cols-12">
           <div className="lg:col-span-8 pr-4">
             <div>
-              <Text variant="sectionHeading">Full Name</Text>
+              <Text variant="sectionHeading">Nombre Completo</Text>
               <span>
                 {data.firstName} {data.lastName}
               </span>

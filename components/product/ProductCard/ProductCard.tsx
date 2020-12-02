@@ -43,9 +43,9 @@ const ProductCard: FC<Props> = ({
         className={cn(s.root, { [s.simple]: variant === 'simple' }, className)}
       >
         {variant === 'slim' ? (
-          <div className="relative overflow-hidden box-border">
+          <div className="relative overflow-hidden box-border ">
             <div className="absolute inset-0 flex items-center justify-end mr-8 z-20">
-              <span className="bg-black text-white inline-block p-3 font-bold text-xl break-words">
+              <span className="bg-black text-white inline-block p-3 font-bold text-sl break-words">
                 {p.name}
               </span>
             </div>
@@ -64,7 +64,7 @@ const ProductCard: FC<Props> = ({
         ) : (
           <>
             
-            <div className="flex flex-row justify-between box-border w-full z-20 absolute">
+            <div className={s.wrapper}>
               <div className="absolute top-0 left-0 pr-16 max-w-full">
                 <h3 className={s.productTitle}>
                   <span>{p.name}</span>

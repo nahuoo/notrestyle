@@ -66,23 +66,22 @@ const SignUpView: FC<Props> = () => {
       className="w-80 flex flex-col justify-between p-3"
     >
       <div className="flex justify-center pb-12 ">
-        <Logo width="64px" height="64px" />
+        <Logo width="200px" height="200px" />
       </div>
       <div className="flex flex-col space-y-4">
         {message && (
           <div className="text-red border border-red p-3">{message}</div>
         )}
-        <Input placeholder="First Name" onChange={setFirstName} />
-        <Input placeholder="Last Name" onChange={setLastName} />
+        <Input placeholder="Nombre" onChange={setFirstName} />
+        <Input placeholder="Apellido" onChange={setLastName} />
         <Input type="email" placeholder="Email" onChange={setEmail} />
-        <Input type="password" placeholder="Password" onChange={setPassword} />
+        <Input type="password" placeholder="Contraseña" onChange={setPassword} />
         <span className="text-accents-8">
           <span className="inline-block align-middle ">
             <Info width="15" height="15" />
           </span>{' '}
           <span className="leading-6 text-sm">
-            <strong>Info</strong>: Passwords must be longer than 7 chars and
-            include numbers.{' '}
+            <strong>Info</strong>: La contraseña debe tener mas de 7 caracteres incluyendo 1 número.{' '}
           </span>
         </span>
         <div className="pt-2 w-full flex flex-col">
@@ -92,12 +91,12 @@ const SignUpView: FC<Props> = () => {
             loading={loading}
             disabled={disabled}
           >
-            Sign Up
+            Registrarse
           </Button>
         </div>
 
         <span className="pt-1 text-center text-sm">
-          <span className="text-accents-7">Do you have an account?</span>
+          <span className="text-accents-7">Ya tenés cuenta?</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"

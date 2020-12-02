@@ -30,8 +30,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               <a className="flex flex-initial items-center font-bold md:mr-24">
                 <span className="rounded-full border border-gray-700 mr-2">
                   <Logo />
-                </span>
-                <span>ACME</span>
+                </span>        
               </a>
             </Link>
           </div>
@@ -41,13 +40,6 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <Link href="/">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
                     Home
-                  </a>
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link href="/">
-                  <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Careers
                   </a>
                 </Link>
               </li>

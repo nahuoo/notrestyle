@@ -62,10 +62,10 @@ const CartSidebarView: FC = () => {
             <Bag className="absolute" />
           </span>
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Your cart is empty
+            Tu carrito esta vacío
           </h2>
           <p className="text-accents-3 px-10 text-center pt-2">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+            asdasdasdasd.
           </p>
         </div>
       ) : error ? (
@@ -74,8 +74,7 @@ const CartSidebarView: FC = () => {
             <Cross width={24} height={24} />
           </span>
           <h2 className="pt-6 text-xl font-light text-center">
-            We couldn’t process the purchase. Please check your card information
-            and try again.
+            No pudimos procesar el pago, por favor revisá la información de la tarjeta.
           </h2>
         </div>
       ) : success ? (
@@ -84,14 +83,14 @@ const CartSidebarView: FC = () => {
             <Check />
           </span>
           <h2 className="pt-6 text-xl font-light text-center">
-            Thank you for your order.
+            Gracias por tu compra.
           </h2>
         </div>
       ) : (
         <>
           <div className="px-4 sm:px-6 flex-1">
             <h2 className="pt-1 pb-4 text-2xl leading-7 font-bold text-base tracking-wide">
-              My Cart
+              Mi carrito
             </h2>
             <ul className="py-6 space-y-6 sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-3 border-t border-accents-3">
               {items.map((item) => (
@@ -126,7 +125,7 @@ const CartSidebarView: FC = () => {
               </div>
             </div>
             <Button href="/checkout" Component="a" width="100%">
-              Proceed to Checkout
+              Proceder a checkout
             </Button>
           </div>
         </>

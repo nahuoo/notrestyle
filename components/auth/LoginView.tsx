@@ -44,6 +44,7 @@ const LoginView: FC<Props> = () => {
   const handleValidation = useCallback(() => {
     // Test for Alphanumeric password
     const validPassword = /^(?=.*[a-zA-Z])(?=.*[0-9])/.test(password)
+    console.log('que miras, gato?')
 
     // Unable to send form unless fields are valid.
     if (dirty) {
@@ -61,22 +62,22 @@ const LoginView: FC<Props> = () => {
       className="w-80 flex flex-col justify-between p-3"
     >
       <div className="flex justify-center pb-12 ">
-        <Logo width="64px" height="64px" />
+        <Logo width="200px" height="200px" />
       </div>
       <div className="flex flex-col space-y-3">
         {message && (
           <div className="text-red border border-red p-3">
-            {message}. Did you {` `}
+            {message}. {` `}
             <a
               className="text-accent-9 inline font-bold hover:underline cursor-pointer"
               onClick={() => setModalView('FORGOT_VIEW')}
             >
-              forgot your password?
+              olvidaste la contraseña?
             </a>
           </div>
         )}
         <Input type="email" placeholder="Email" onChange={setEmail} />
-        <Input type="password" placeholder="Password" onChange={setPassword} />
+        <Input type="password" placeholder="Contraseña" onChange={setPassword} />
 
         <Button
           variant="slim"
@@ -84,16 +85,16 @@ const LoginView: FC<Props> = () => {
           loading={loading}
           disabled={disabled}
         >
-          Log In
+          Ingresar
         </Button>
         <div className="pt-1 text-center text-sm">
-          <span className="text-accents-7">Don't have an account?</span>
+          <span className="text-accents-7">No tenés cuenta?</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('SIGNUP_VIEW')}
           >
-            Sign Up
+            Registrarse
           </a>
         </div>
       </div>
