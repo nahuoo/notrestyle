@@ -11,10 +11,10 @@ interface Props {
 
 const Hero: FC<Props> = ({ titulo, descripcion }) => {
   return (
-    <div className="bg-black">
+    <div className="bg-pink">
       <Container>
         <div className={s.root}>
-          <h2 className="text-4xl leading-10 font-extrabold text-white sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">
+          <h2 className="text-6xl leading-10 font-extrabold text-white sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">
             {titulo}
           </h2>
           <div className="flex flex-col justify-between">

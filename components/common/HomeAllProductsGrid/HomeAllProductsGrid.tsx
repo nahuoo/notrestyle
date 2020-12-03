@@ -19,7 +19,7 @@ const Head: FC<Props> = ({ categories, brands, newestProducts }) => {
           <ul className="mb-10">
             <li className="py-1 text-base font-bold tracking-wide">
               <Link href={getCategoryPath('')}>
-                <a>All Categories</a>
+                <a>Categorías</a>
               </Link>
             </li>
             {categories.map((cat: any) => (
@@ -30,9 +30,10 @@ const Head: FC<Props> = ({ categories, brands, newestProducts }) => {
               </li>
             ))}
           </ul>
+          {/*
           <ul className="">
             <li className="py-1 text-base font-bold tracking-wide">
-              <Link href={getDesignerPath('')}>
+                <Link href={getDesignerPath('')}>
                 <a>All Designers</a>
               </Link>
             </li>
@@ -44,6 +45,7 @@ const Head: FC<Props> = ({ categories, brands, newestProducts }) => {
               </li>
             ))}
           </ul>
+            */}
         </div>
       </div>
       <div className="flex-1">

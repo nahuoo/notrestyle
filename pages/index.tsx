@@ -86,11 +86,14 @@ export default function Home({
     <div>
       {// aca esta el background-img
       }
-      <div className="bg-head-fondo bg-cover min-h-screen mt-0"></div>
+      <div className="bg-head-fondo bg-cover min-h-screen -mt-48 mt-0"></div>
+      {
+        // DIV De titulo
+      }
        <Hero 
         titulo="Nueva colección 2020"
         descripcion="
-        Aca una virgueada."
+        Nuevas bikinis."
       />
 
       {// primeras tres imagenes
@@ -125,8 +128,8 @@ export default function Home({
       {
         //si esto tiene descripciòn larga se bugea todo
       }
-     
-      <Grid layout="B">
+     {/*
+      <Grid layout="A">
         {featured.slice(3, 6).map(({ node }, i) => (
           <ProductCard
             key={node.path}
@@ -136,6 +139,7 @@ export default function Home({
           />
         ))}
       </Grid>
+        */}
       <Marquee>
         {bestSelling.slice(0, 3).map(({ node }) => (
           <ProductCard

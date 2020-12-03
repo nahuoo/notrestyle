@@ -1,6 +1,6 @@
 @tailwind base;
 @import './base.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 @tailwind components;
 @import './components.css';
 

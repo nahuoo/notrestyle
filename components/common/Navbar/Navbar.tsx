@@ -33,7 +33,7 @@ const Navbar: FC = () => {
                 <img  width='175' src='icon.png'  />
               </a>
             </Link>
-            <nav className="space-x-4 ml-6 hidden lg:block">
+            <nav className="space-x-6 ml-6 hidden lg:block font-sans">
               <Link href="/">
                 <a className={s.link}>Todo</a>
               </Link>

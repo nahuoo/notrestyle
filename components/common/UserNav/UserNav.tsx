@@ -32,6 +32,7 @@ const UserNav: FC<Props> = ({ className, children, ...props }) => {
             <Bag />
             {itemsCount > 0 && <span className={s.bagCount}>{itemsCount}</span>}
           </li>
+          {/*
           <li className={s.item}>
             <Link href="/wishlist">
               <a onClick={closeSidebarIfPresent} aria-label="Wishlist">
@@ -39,6 +40,7 @@ const UserNav: FC<Props> = ({ className, children, ...props }) => {
               </a>
             </Link>
           </li>
+          */}
           <li className={s.item}>
             {customer ? (
               <Menu>

@@ -3,7 +3,7 @@
 }
 
 .link {
-  @apply inline-flex items-center text-primary leading-6 text-sm transition ease-in-out duration-75 cursor-pointer text-accents-6;
+  @apply inline-flex items-center text-primary leading-6 text-lg transition ease-in-out duration-75 cursor-pointer text-accents-6;
 }
 
 .link:hover {
